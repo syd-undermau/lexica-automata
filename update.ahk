@@ -10,8 +10,7 @@ CheckForUpdate() {
 
     req := ComObject("Msxml2.XMLHTTP")
     ; Open a request with async enabled.
-    ; req.open("GET", "https://raw.githubusercontent.com/syd-undermau/lexica-automata/main/VERSION", true)
-    req.open("GET", "https://www.autohotkey.com/download/2.0/version.txt", true)
+    req.open("GET", "https://raw.githubusercontent.com/syd-undermau/lexica-automata/main/VERSION", true)
     ; Set our callback function.
     req.onreadystatechange := OnUpdateFound
     ; Send the request.  Ready() will be called when it's complete.
