@@ -1,19 +1,8 @@
 #Requires AutoHotkey v2.0
 
-;------------------------------------------------------------------------------
-; Win+H to enter misspelling correction.  It will be added to this script.
-;------------------------------------------------------------------------------
-
-DefineHotstring(Key, Value, Description := "") {
-    try {
-        StrVal := String(Value)
-    } catch {
-        StrVal := "(closure)"
-    }
-    ; DebugStack.Info("Defining new hotstring: [" . key . "] --> [" . StrVal . "]`t" . Description, 1)
-
-    Hotstring(Key, Value, "On")
-}
+;---------------------------------------------------------------------------------------
+; Win+H, Alt+Shift+H to enter misspelling correction.  It will be added to this script.
+;---------------------------------------------------------------------------------------
 
 EscapeKeyString(Str) {
     Str := StrReplace(Str, "``", "````")  ; Do this replacement first to avoid interfering with the others below.
@@ -72,8 +61,8 @@ ShowInputBox(DefaultValue)
             MsgText := "You didn't provide a replacement"
         else
         {
-            DefineHotstring UnescapeKeyString(Entered.Label), Entered.Replacement  ; Enable the hotstring now.
-            FileAppend "`n" IB.Value, A_ScriptDir . "\\hotstrings.ahk"  ; Save the hotstring for later use.
+            Hotstring UnescapeKeyString(Entered.Label), Entered.Replacement  ; Enable the hotstring now.
+            FileAppend "`n" IB.Value, A_ScriptDir . "\\new_hotstrings.ahk"  ; Save the hotstring for later use.
         }
     }
     else
@@ -96,7 +85,7 @@ ShowInputBox(DefaultValue)
     }
 }
 
-#Include "./comcourts.ahk"
+#Include "./new_hotstrings.ahk"
 
 ::I'll::I will
 ::you'll::you will

@@ -2,7 +2,8 @@
 #Include "../helpers.ahk"
 
 ; *so*
-; There's currently a bug in NS where entering inaudible review mode creates issues with the lock stack in the editor
+; There's currently a bug in NS where entering inaudible review mode creates issues with the lock stack in the editor.  
+; Specifically, it can delete everything since you entered review mode
 ; This remaps undo/redo to forcibly unlock the stack before triggering undo/redo, which prevents these issues with undo state
 ; As a side effect, these are slightly more annoying to use, but much *much* more reliable
 

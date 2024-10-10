@@ -3,6 +3,8 @@
 
 global OpenAsText := ""
 
+; Select the matter number (SYD2000/000) and then press Ctrl+O
+
 ; Create the popup menu by adding some items to it.
 OpenAsMenu := Menu()
 OpenAsMenu.Add("&Matter Artefact", OpenAsMatterArtefact)

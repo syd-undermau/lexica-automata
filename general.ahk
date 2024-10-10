@@ -8,4 +8,5 @@
 ; If you use the regular youtube player, change to "YouTube"
 
 ; Parameters: Keys, Control Element, Window Title
-Media_Play_Pause::ControlSendActive(";",, "YouTube Music")
+; Uncomment to use
+; Media_Play_Pause::ControlSendActive(";",, "YouTube Music")

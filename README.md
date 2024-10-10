@@ -6,10 +6,10 @@ This is an "in progress" build of the scripts I've been using for typing.  There
 ## How to use
 To use this, you'll want to download and install [AutoHotkey](https://autohotkey.com/) v2.0.  This is the scripting suite that I'm using here.
 
-Once installed, you should be able to easily 
+Once installed, you should be able to easily double click `main.ahk` to run.
 
 ## Layout
-I've tried to divide the script into separate modules, and tried to comment things as best I can.
+I've tried to divide the script into separate modules, and tried to comment things as best I can.  For a list of shortcuts, see [HOTKEYS](HOTKEYS.md).
 
 ### Need help?
 Open up a GH Issue or send me an email at [lexica@brella.dev](mailto:lexica@brella.dev).  This script should include a basic version check as well that will direct you to update.
