@@ -6,6 +6,8 @@ This is an "in progress" build of the scripts I've been using for typing.  There
 ## How to use
 To use this, you'll want to download and install [AutoHotkey](https://autohotkey.com/) v2.0.  This is the scripting suite that I'm using here.
 
+To download this set of scripts, you can use git normally if you know how, or from the releases, or [here](https://github.com/syd-undermau/lexica-automata/archive/refs/heads/main.zip).
+
 Once installed, you should be able to easily double click `main.ahk` to run.
 
 ## Layout
